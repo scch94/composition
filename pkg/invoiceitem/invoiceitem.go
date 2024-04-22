@@ -30,6 +30,12 @@ func (i *Item) SetValue(value float64) {
 	i.value = value
 }
 
-func (i *Item) Value() float64 {
-	return i.value
+type Items []Item
+
+func (is Items) Total() float64 {
+	var total float64
+	for _, item := range is {
+		total += item.value
+	}
+	return total
 }

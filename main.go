@@ -13,7 +13,7 @@ func main() {
 		"Colombia",
 		"Pasto",
 		customer.New("santiago canal", "calle 64#15-03", "3012415382"),
-		[]invoiceitem.Item{
+		invoiceitem.Items{
 			invoiceitem.New(
 				1,
 				"mantequlla",
